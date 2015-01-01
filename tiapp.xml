@@ -55,6 +55,7 @@
         <module platform="iphone">com.omorandi</module>
         <module platform="iphone">path.animator</module>
         <module platform="iphone">ti.imagefactory</module>
+        <module platform="iphone">bencoding.blur</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>

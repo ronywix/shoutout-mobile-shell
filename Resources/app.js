@@ -1,6 +1,5 @@
 
-
-function includeAll (){
+/*function includeAll (){
 	Ti.UI.Clipboard;
 	Ti.UI.create2DMatrix();
 	Ti.UI.createAnimation();
@@ -18,7 +17,7 @@ function includeAll (){
 	Ti.UI.iPhone.ListViewCellSelectionStyle;
 	Ti.UI.iPhone.RowAnimationStyle;
 	Ti.Media;
-}
+}*/
 
 
 Ti.include("http-1.0.2.js");
