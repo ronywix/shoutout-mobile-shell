@@ -1,5 +1,5 @@
 
-/*function includeAll (){
+function includeAll (){
 	Ti.UI.Clipboard;
 	Ti.UI.create2DMatrix();
 	Ti.UI.createAnimation();
@@ -17,8 +17,7 @@
 	Ti.UI.iPhone.ListViewCellSelectionStyle;
 	Ti.UI.iPhone.RowAnimationStyle;
 	Ti.Media;
-}*/
-
+}
 
 Ti.include("http-1.0.2.js");
 Ti.include("tipack/tipack4js-client.js");
@@ -28,6 +27,8 @@ function progressCallback(e)
 {
   
 }
+
+includeAll();
 
 tipack.Loader.loadDefault({
     defaultProjectId : "com.wix.shoutout.app-alpha",
