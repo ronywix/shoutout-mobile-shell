@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>com.wix.shoutout</id>
     <name>Shoutout</name>
-    <version>1.1</version>
+    <version>1.1.0</version>
     <publisher>ronyh</publisher>
     <url>http://</url>
     <description>undefined</description>
