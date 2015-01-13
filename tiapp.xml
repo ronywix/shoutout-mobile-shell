@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>com.wix.shoutout</id>
     <name>Shoutout</name>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <publisher>ronyh</publisher>
     <url>http://</url>
     <description>undefined</description>
@@ -58,11 +58,11 @@
         <module platform="iphone">bencoding.blur</module>
     </modules>
     <deployment-targets>
-        <target device="android">true</target>
+        <target device="android">false</target>
         <target device="blackberry">false</target>
-        <target device="ipad">true</target>
+        <target device="ipad">false</target>
         <target device="iphone">true</target>
-        <target device="mobileweb">true</target>
+        <target device="mobileweb">false</target>
     </deployment-targets>
     <sdk-version>3.4.0.GA</sdk-version>
 </ti:app>
