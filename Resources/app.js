@@ -106,7 +106,16 @@ Ti.include("tipack/tipack4js-utils.js");
 
 function progressCallback(e)
 {
-  
+	console.log("progressCallback: " + JSON.stringify(e));
+	if (e.type == "error")
+	{
+		var alert = Ti.UI.createAlertDialog({
+			title: "Something Weird Happened",
+			message: "We’re on it...Go ahead and try again"
+		});
+		
+		alert.show();
+	}
 }
 
 includeAll();
@@ -114,6 +123,6 @@ includeAll();
 tipack.Loader.loadDefault({
     defaultProjectId : "com.wix.shoutout.app-alpha",
     defaultUseLatest: true,
-    defaultMaxFailedRuns:1,
-    callback:progressCallback
+    defaultMaxFailedRuns: 1,
+    callback: progressCallback
 });
