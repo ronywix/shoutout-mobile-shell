@@ -104,6 +104,8 @@ Ti.include("http-1.0.2.js");
 Ti.include("tipack/tipack4js-client.js");
 Ti.include("tipack/tipack4js-utils.js");
 
+var PROJECT_REPOSITORY = "com.wix.shoutout.app-beta";
+
 function progressCallback(e)
 {
 	console.log("progressCallback: " + JSON.stringify(e));
@@ -120,8 +122,10 @@ function progressCallback(e)
 
 includeAll();
 
+tipack.Properties.setProjectId(PROJECT_REPOSITORY);
+
 tipack.Loader.loadDefault({
-    defaultProjectId : "com.wix.shoutout.app-alpha",
+    defaultProjectId : PROJECT_REPOSITORY,
     defaultUseLatest: true,
     defaultMaxFailedRuns: 1,
     callback: progressCallback
